@@ -1,0 +1,20 @@
+{
+  "env": {
+    "build": {
+      "presets": [
+        ["env", {"modules": false}],
+        "stage-3"
+      ]
+    },
+    "test": {
+      "presets": [
+        "env",
+        "stage-3"
+      ],
+      "plugins": [
+        "istanbul",
+        "rewire"
+      ]
+    }
+  }
+}
